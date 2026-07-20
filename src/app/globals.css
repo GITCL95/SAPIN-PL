@@ -35,38 +35,38 @@
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
-  --background: oklch(0.30 0.025 151);
-  --foreground: oklch(0.95 0.015 95);
-  --card: oklch(0.36 0.035 151);
-  --card-foreground: oklch(0.95 0.015 95);
-  --popover: oklch(0.36 0.035 151);
-  --popover-foreground: oklch(0.95 0.015 95);
+  --background: oklch(0.95 0.015 95);
+  --foreground: oklch(0.25 0.025 151);
+  --card: oklch(1.0 0 0);
+  --card-foreground: oklch(0.25 0.025 151);
+  --popover: oklch(1.0 0 0);
+  --popover-foreground: oklch(0.25 0.025 151);
   --primary: oklch(0.69 0.09 74);
-  --primary-foreground: oklch(0.30 0.025 151);
-  --secondary: oklch(0.42 0.04 151);
-  --secondary-foreground: oklch(0.95 0.015 95);
-  --muted: oklch(0.42 0.04 151);
-  --muted-foreground: oklch(0.80 0.025 151);
+  --primary-foreground: oklch(1.0 0 0);
+  --secondary: oklch(0.93 0.01 95);
+  --secondary-foreground: oklch(0.25 0.025 151);
+  --muted: oklch(0.93 0.01 95);
+  --muted-foreground: oklch(0.45 0.03 151);
   --accent: oklch(0.83 0.09 82);
-  --accent-foreground: oklch(0.16 0.035 151);
+  --accent-foreground: oklch(0.25 0.025 151);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.50 0.07 68);
-  --input: oklch(0.50 0.07 68);
-  --ring: oklch(0.83 0.09 82);
+  --border: oklch(0.87 0.02 80);
+  --input: oklch(0.87 0.02 80);
+  --ring: oklch(0.69 0.09 74);
   --chart-1: oklch(0.69 0.09 74);
   --chart-2: oklch(0.83 0.09 82);
   --chart-3: oklch(0.50 0.07 68);
   --chart-4: oklch(0.73 0.03 151);
   --chart-5: oklch(0.27 0.065 151);
   --radius: 0;
-  --sidebar: oklch(0.30 0.025 151);
+  --sidebar: oklch(0.25 0.025 151);
   --sidebar-foreground: oklch(0.95 0.015 95);
   --sidebar-primary: oklch(0.69 0.09 74);
-  --sidebar-primary-foreground: oklch(0.30 0.025 151);
-  --sidebar-accent: oklch(0.42 0.04 151);
+  --sidebar-primary-foreground: oklch(1.0 0 0);
+  --sidebar-accent: oklch(0.35 0.035 151);
   --sidebar-accent-foreground: oklch(0.95 0.015 95);
-  --sidebar-border: oklch(0.50 0.07 68);
-  --sidebar-ring: oklch(0.83 0.09 82);
+  --sidebar-border: oklch(0.87 0.02 80);
+  --sidebar-ring: oklch(0.69 0.09 74);
 }
 
 /* ═══ RESET ═══ */
@@ -77,12 +77,12 @@
 }
 html {
   scroll-behavior: smooth;
-  background: var(--forest);
+  background: var(--ivory);
 }
 body {
   margin: 0;
-  color: var(--ivory);
-  background: var(--forest);
+  color: var(--forest);
+  background: var(--ivory);
   font-family: var(--font-ui);
   font-size: 16px;
   line-height: 1.6;
@@ -118,7 +118,7 @@ img {
 
 /* ═══ TYPOGRAPHIC UTILITIES ═══ */
 .gold {
-  color: var(--brass-light);
+  color: var(--brass);
 }
 
 /* ═══════════════════════════════════════════════════
@@ -252,7 +252,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--brass-light);
+  color: var(--brass-dark);
 }
 .sec-title__rule {
   display: block;
@@ -270,7 +270,7 @@ img {
   font-weight: 350;
   line-height: 1.05;
   letter-spacing: -0.04em;
-  color: var(--ivory);
+  color: var(--forest);
   margin: 0;
 }
 .sec-title__heading--light {
@@ -577,7 +577,7 @@ img {
   font-family: var(--font-display);
   font-size: 44px;
   font-weight: 350;
-  color: var(--brass-light);
+  color: var(--brass);
   letter-spacing: -0.03em;
 }
 .manifesto__stat span {
@@ -585,7 +585,7 @@ img {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--mist);
+  color: var(--velvet-light);
 }
 
 /* ═══════════════════════════════════════════════════
@@ -593,7 +593,7 @@ img {
    ═══════════════════════════════════════════════════ */
 .collections {
   padding: 110px 24px;
-  background: var(--velvet);
+  background: #EDE8DC;
 }
 .collections__inner {
   max-width: 1200px;
@@ -611,8 +611,8 @@ img {
   justify-content: space-between;
   min-height: 320px;
   padding: 28px;
-  background: linear-gradient(180deg, var(--velvet-light), rgba(47, 82, 64, 0.70));
-  border: 1px solid rgba(199, 154, 85, 0.2);
+  background: #fff;
+  border: 1px solid #DDD5C5;
   transition: all 0.4s var(--ease-out-expo);
   overflow: hidden;
 }
@@ -630,7 +630,7 @@ img {
 .cabinet:hover {
   transform: translateY(-4px);
   border-color: var(--brass);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
 .cabinet__num {
   font-family: var(--font-display);
@@ -644,14 +644,14 @@ img {
   font-weight: 350;
   letter-spacing: -0.03em;
   margin: 0 0 8px;
-  color: var(--ivory);
+  color: var(--forest);
 }
 .cabinet__count {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--mist);
+  color: var(--velvet-light);
   margin: 0;
 }
 .cabinet__from {
@@ -659,7 +659,7 @@ img {
   margin-top: 4px;
   font-size: 12px;
   font-weight: 600;
-  color: var(--brass-light);
+  color: var(--brass-dark);
   letter-spacing: 0.06em;
 }
 .cabinet__arrow {
@@ -770,7 +770,7 @@ img {
 .quality__image {
   position: relative;
   min-height: 560px;
-  border: 1px solid var(--brass-dark);
+  border: 1px solid #DDD5C5;
   overflow: hidden;
 }
 .quality__image img {
@@ -796,14 +796,14 @@ img {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--mist);
+  color: var(--velvet-light);
 }
 .specs-table__row dd {
   margin: 0;
   font-family: var(--font-display);
   font-size: 19px;
   font-weight: 400;
-  color: var(--brass-light);
+  color: var(--brass-dark);
 }
 
 /* ═══════════════════════════════════════════════════
@@ -811,7 +811,7 @@ img {
    ═══════════════════════════════════════════════════ */
 .bestsellers {
   padding: 110px 24px;
-  background: linear-gradient(180deg, rgba(42, 72, 56, 1), var(--forest));
+  background: var(--ivory);
 }
 .bestsellers__inner {
   max-width: 1200px;
@@ -823,20 +823,20 @@ img {
   gap: 24px;
 }
 .product-card {
-  background: var(--velvet);
-  border: 1px solid rgba(199, 154, 85, 0.2);
+  background: #fff;
+  border: 1px solid #DDD5C5;
   transition: all 0.4s var(--ease-out-expo);
   overflow: hidden;
 }
 .product-card:hover {
   transform: translateY(-4px);
   border-color: var(--brass);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
 }
 .product-card__image {
   position: relative;
   height: 380px;
-  background: linear-gradient(180deg, #3D6752, #2F5240);
+  background: linear-gradient(180deg, #F5F0E5, #EDE7D9);
   overflow: hidden;
 }
 .product-card__image img {
@@ -887,6 +887,7 @@ img {
   width: 100%;
   border-left: none;
   border-right: none;
+  border-bottom: none;
   box-shadow: none;
 }
 .product-card__pricing {
@@ -899,12 +900,12 @@ img {
 .product-card__old del {
   display: block;
   font-size: 13px;
-  color: var(--mist);
+  color: var(--velvet-light);
 }
 .product-card__old small {
   display: block;
   font-size: 9px;
-  color: var(--mist);
+  color: var(--velvet-light);
   margin-top: 2px;
   max-width: 160px;
   line-height: 1.3;
@@ -913,7 +914,7 @@ img {
   font-family: var(--font-display);
   font-size: 28px;
   font-weight: 350;
-  color: var(--brass-light);
+  color: var(--brass-dark);
   letter-spacing: -0.02em;
 }
 
@@ -938,13 +939,13 @@ img {
   position: relative;
   margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(199, 154, 85, 0.2);
+  border: 1px solid #DDD5C5;
 }
 .lookbook__thumb {
   position: relative;
   margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(199, 154, 85, 0.2);
+  border: 1px solid #DDD5C5;
 }
 .lookbook__grid img {
   object-fit: cover;
@@ -970,6 +971,12 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
+.testimonials__header .sec-title__heading {
+  color: var(--ivory);
+}
+.testimonials__header .sec-title__eyebrow {
+  color: var(--brass-light);
+}
 .testimonials__counter {
   text-align: right;
 }
@@ -991,7 +998,7 @@ img {
 }
 .testimonials__body {
   padding: 0 24px 100px;
-  background: var(--velvet);
+  background: #EDE8DC;
 }
 .testimonials__grid {
   display: grid;
@@ -1004,17 +1011,17 @@ img {
 .review-card {
   padding: 32px;
   margin: 0;
-  background: linear-gradient(180deg, rgba(61, 103, 82, 0.50), rgba(47, 82, 64, 0.70));
-  border: 1px solid rgba(199, 154, 85, 0.2);
+  background: #fff;
+  border: 1px solid #DDD5C5;
   transition: all 0.35s var(--ease-out-expo);
 }
 .review-card:hover {
   border-color: var(--brass);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
 }
 .review-card__stars {
-  color: var(--brass-light);
+  color: var(--brass);
   font-size: 15px;
   letter-spacing: 0.15em;
   margin-bottom: 16px;
@@ -1024,7 +1031,7 @@ img {
   font-size: 19px;
   font-weight: 350;
   line-height: 1.4;
-  color: var(--ivory);
+  color: var(--forest);
   margin: 0;
 }
 .review-card__footer {
@@ -1037,18 +1044,18 @@ img {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--brass-light);
+  color: var(--brass-dark);
 }
 .review-card__footer span {
   display: block;
   font-size: 11px;
-  color: var(--mist);
+  color: var(--velvet-light);
   margin-top: 2px;
 }
 .review-card__footer small {
   display: block;
   font-size: 9px;
-  color: var(--mist);
+  color: var(--velvet-light);
   margin-top: 8px;
   letter-spacing: 0.06em;
 }
@@ -1059,15 +1066,16 @@ img {
 .usp {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--brass-dark);
-  border-bottom: 1px solid var(--brass-dark);
+  border-top: 1px solid #DDD5C5;
+  border-bottom: 1px solid #DDD5C5;
+  background: var(--ivory);
 }
 .usp__item {
   display: flex;
   align-items: center;
   gap: 14px;
   padding: 28px 20px;
-  border-right: 1px solid rgba(199, 154, 85, 0.2);
+  border-right: 1px solid #DDD5C5;
   justify-content: center;
 }
 .usp__item:last-child {
@@ -1083,12 +1091,12 @@ img {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ivory);
+  color: var(--forest);
 }
 .usp__item small {
   display: block;
   font-size: 10px;
-  color: var(--mist);
+  color: var(--velvet-light);
   margin-top: 2px;
 }
 
@@ -1154,7 +1162,7 @@ img {
    FOOTER
    ═══════════════════════════════════════════════════ */
 .footer {
-  background: #1E3A2C;
+  background: var(--forest);
   border-top: 1px solid var(--brass-dark);
 }
 .footer__inner {
@@ -1553,7 +1561,7 @@ img {
 
 /* ── Lucide icon adjustments ── */
 .usp__icon {
-  color: var(--brass-light);
+  color: var(--brass);
   flex-shrink: 0;
 }
 .hero__stars {
