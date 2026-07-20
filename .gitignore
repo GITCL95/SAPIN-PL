@@ -5,3 +5,5 @@ out/
 *.zip
 inspiration/
 *.tsbuildinfo
+*.docx
+*.xlsx
