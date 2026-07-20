@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { SmoothScroll } from "@/components/smooth-scroll";
 import "./globals.css";
 
 const fraunces = localFont({
@@ -27,14 +28,19 @@ const archivo = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Idealna Choinka — Luksus w uczciwej cenie",
-  description: "Polskie choinki sztuczne premium, stworzone na lata.",
+  title: "Idealna Choinka \u2014 Luksus w uczciwej cenie",
+  description:
+    "Polskie choinki sztuczne premium \u2014 178 modeli, igliwie 100% PE, wysylka 24h. Stworzone na lata.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pl">
-      <body className={`${fraunces.variable} ${archivo.variable}`}>{children}</body>
+      <body className={`${fraunces.variable} ${archivo.variable}`}>
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }
