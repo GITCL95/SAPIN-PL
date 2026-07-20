@@ -10,43 +10,43 @@
    ═══════════════════════════════════════════════════ */
 
 @theme {
-  --color-forest: oklch(0.16 0.035 151);
-  --color-velvet: oklch(0.22 0.055 151);
-  --color-velvet-light: oklch(0.27 0.065 151);
+  --color-forest: oklch(0.22 0.03 151);
+  --color-velvet: oklch(0.28 0.045 151);
+  --color-velvet-light: oklch(0.34 0.055 151);
   --color-brass: oklch(0.69 0.09 74);
   --color-brass-light: oklch(0.83 0.09 82);
   --color-brass-dark: oklch(0.50 0.07 68);
   --color-ivory: oklch(0.94 0.02 95);
-  --color-mist: oklch(0.73 0.03 151);
+  --color-mist: oklch(0.76 0.03 151);
 }
 
 :root {
-  --forest: #0A1811;
-  --velvet: #10281B;
-  --velvet-light: #173725;
+  --forest: #142A1E;
+  --velvet: #1C3A2A;
+  --velvet-light: #264D38;
   --brass: #C79A55;
   --brass-light: #E7C98D;
   --brass-dark: #8A6836;
   --ivory: #F4EEDF;
-  --mist: #9FB2A4;
+  --mist: #B0C4B5;
 
   --font-display: var(--font-fraunces), "Georgia", serif;
   --font-ui: var(--font-archivo), "Arial", sans-serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
-  --background: oklch(0.16 0.035 151);
+  --background: oklch(0.22 0.03 151);
   --foreground: oklch(0.94 0.02 95);
-  --card: oklch(0.22 0.055 151);
+  --card: oklch(0.28 0.045 151);
   --card-foreground: oklch(0.94 0.02 95);
-  --popover: oklch(0.22 0.055 151);
+  --popover: oklch(0.28 0.045 151);
   --popover-foreground: oklch(0.94 0.02 95);
   --primary: oklch(0.69 0.09 74);
-  --primary-foreground: oklch(0.16 0.035 151);
-  --secondary: oklch(0.27 0.065 151);
+  --primary-foreground: oklch(0.22 0.03 151);
+  --secondary: oklch(0.34 0.055 151);
   --secondary-foreground: oklch(0.94 0.02 95);
-  --muted: oklch(0.27 0.065 151);
-  --muted-foreground: oklch(0.73 0.03 151);
+  --muted: oklch(0.34 0.055 151);
+  --muted-foreground: oklch(0.76 0.03 151);
   --accent: oklch(0.83 0.09 82);
   --accent-foreground: oklch(0.16 0.035 151);
   --destructive: oklch(0.577 0.245 27.325);
@@ -59,11 +59,11 @@
   --chart-4: oklch(0.73 0.03 151);
   --chart-5: oklch(0.27 0.065 151);
   --radius: 0;
-  --sidebar: oklch(0.16 0.035 151);
+  --sidebar: oklch(0.22 0.03 151);
   --sidebar-foreground: oklch(0.94 0.02 95);
   --sidebar-primary: oklch(0.69 0.09 74);
-  --sidebar-primary-foreground: oklch(0.16 0.035 151);
-  --sidebar-accent: oklch(0.27 0.065 151);
+  --sidebar-primary-foreground: oklch(0.22 0.03 151);
+  --sidebar-accent: oklch(0.34 0.055 151);
   --sidebar-accent-foreground: oklch(0.94 0.02 95);
   --sidebar-border: oklch(0.50 0.07 68);
   --sidebar-ring: oklch(0.83 0.09 82);
@@ -300,9 +300,9 @@ img {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(10, 24, 17, 0.92) 0%,
-    rgba(10, 24, 17, 0.75) 40%,
-    rgba(10, 24, 17, 0.55) 100%
+    rgba(20, 42, 30, 0.90) 0%,
+    rgba(20, 42, 30, 0.72) 40%,
+    rgba(20, 42, 30, 0.50) 100%
   );
 }
 .hero__content {
@@ -364,9 +364,9 @@ img {
   padding-bottom: 30px;
   border: 1px solid rgba(231, 201, 141, 0.6);
   border-radius: 220px 220px 0 0;
-  background: linear-gradient(180deg, rgba(16, 40, 27, 0.3), rgba(10, 24, 17, 0.6));
+  background: linear-gradient(180deg, rgba(28, 58, 42, 0.3), rgba(20, 42, 30, 0.55));
   box-shadow:
-    inset 0 0 0 8px rgba(10, 24, 17, 0.8),
+    inset 0 0 0 8px rgba(20, 42, 30, 0.75),
     inset 0 0 0 9px rgba(199, 154, 85, 0.3),
     0 40px 80px rgba(0, 0, 0, 0.5);
 }
@@ -401,8 +401,8 @@ img {
   padding: 14px 24px;
   background: linear-gradient(
     135deg,
-    rgba(23, 55, 37, 0.95),
-    rgba(16, 40, 27, 0.98)
+    rgba(38, 77, 56, 0.92),
+    rgba(28, 58, 42, 0.96)
   );
   border: 1px solid var(--brass-dark);
   box-shadow:
@@ -611,7 +611,7 @@ img {
   justify-content: space-between;
   min-height: 320px;
   padding: 28px;
-  background: linear-gradient(180deg, var(--velvet-light), rgba(16, 40, 27, 0.8));
+  background: linear-gradient(180deg, var(--velvet-light), rgba(28, 58, 42, 0.75));
   border: 1px solid rgba(199, 154, 85, 0.2);
   transition: all 0.4s var(--ease-out-expo);
   overflow: hidden;
@@ -695,9 +695,9 @@ img {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(10, 24, 17, 0.7) 0%,
-    rgba(10, 24, 17, 0.4) 50%,
-    rgba(10, 24, 17, 0.7) 100%
+    rgba(20, 42, 30, 0.65) 0%,
+    rgba(20, 42, 30, 0.35) 50%,
+    rgba(20, 42, 30, 0.65) 100%
   );
 }
 .video-section__content {
@@ -722,7 +722,7 @@ img {
   justify-content: center;
   width: 88px;
   height: 88px;
-  background: rgba(10, 24, 17, 0.5);
+  background: rgba(20, 42, 30, 0.45);
   border: 2px solid var(--brass);
   border-radius: 50%;
   color: var(--brass-light);
@@ -811,7 +811,7 @@ img {
    ═══════════════════════════════════════════════════ */
 .bestsellers {
   padding: 110px 24px;
-  background: linear-gradient(180deg, rgba(13, 33, 23, 1), var(--forest));
+  background: linear-gradient(180deg, rgba(24, 50, 36, 1), var(--forest));
 }
 .bestsellers__inner {
   max-width: 1200px;
@@ -836,7 +836,7 @@ img {
 .product-card__image {
   position: relative;
   height: 380px;
-  background: linear-gradient(180deg, #163423, #0f2a1c);
+  background: linear-gradient(180deg, #224A35, #1C3A2A);
   overflow: hidden;
 }
 .product-card__image img {
@@ -961,7 +961,7 @@ img {
   padding: 80px 24px 60px;
   background-size: cover;
   background-position: center;
-  background: linear-gradient(135deg, var(--velvet), rgba(16, 40, 27, 0.9));
+  background: linear-gradient(135deg, var(--velvet), rgba(28, 58, 42, 0.85));
 }
 .testimonials__header-inner {
   display: flex;
@@ -1004,7 +1004,7 @@ img {
 .review-card {
   padding: 32px;
   margin: 0;
-  background: linear-gradient(180deg, rgba(23, 55, 37, 0.6), rgba(16, 40, 27, 0.8));
+  background: linear-gradient(180deg, rgba(38, 77, 56, 0.55), rgba(28, 58, 42, 0.75));
   border: 1px solid rgba(199, 154, 85, 0.2);
   transition: all 0.35s var(--ease-out-expo);
 }
@@ -1110,8 +1110,8 @@ img {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(10, 24, 17, 0.92),
-    rgba(10, 24, 17, 0.7)
+    rgba(20, 42, 30, 0.90),
+    rgba(20, 42, 30, 0.65)
   );
 }
 .newsletter__inner {
@@ -1154,7 +1154,7 @@ img {
    FOOTER
    ═══════════════════════════════════════════════════ */
 .footer {
-  background: #07120C;
+  background: #0F2018;
   border-top: 1px solid var(--brass-dark);
 }
 .footer__inner {
