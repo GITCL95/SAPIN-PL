@@ -18,8 +18,8 @@
   --color-brass-dark: oklch(0.50 0.07 68);
   --color-ivory: oklch(0.94 0.02 95);
   --color-mist: oklch(0.73 0.03 151);
-  --font-sans: var(--font-playfair), "Times New Roman", Georgia, serif;
-  --font-heading: var(--font-playfair), "Times New Roman", Georgia, serif;
+  --font-sans: "Playfair Display", "Times New Roman", Georgia, serif;
+  --font-heading: "Playfair Display", "Times New Roman", Georgia, serif;
 }
 
 :root {
@@ -32,8 +32,8 @@
   --ivory: #F4EEDF;
   --mist: #9FB2A4;
 
-  --font-display: var(--font-playfair), "Times New Roman", Georgia, serif;
-  --font-ui: var(--font-playfair), "Times New Roman", Georgia, serif;
+  --font-display: "Playfair Display", "Times New Roman", Georgia, serif;
+  --font-ui: "Playfair Display", "Times New Roman", Georgia, serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
@@ -80,12 +80,13 @@
 html {
   scroll-behavior: smooth;
   background: var(--forest);
+  font-family: "Playfair Display", "Times New Roman", Georgia, serif;
 }
 body {
   margin: 0;
   color: var(--ivory);
   background: var(--forest);
-  font-family: var(--font-playfair), "Times New Roman", Georgia, serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -1454,8 +1455,8 @@ img {
 }
 
 @theme inline {
-  --font-heading: var(--font-playfair), "Times New Roman", Georgia, serif;
-  --font-sans: var(--font-playfair), "Times New Roman", Georgia, serif;
+  --font-heading: "Playfair Display", "Times New Roman", Georgia, serif;
+  --font-sans: "Playfair Display", "Times New Roman", Georgia, serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -1536,10 +1537,6 @@ img {
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-playfair), "Times New Roman", Georgia, serif;
-  }
-  html {
-    font-family: var(--font-playfair), "Times New Roman", Georgia, serif;
   }
 }
 

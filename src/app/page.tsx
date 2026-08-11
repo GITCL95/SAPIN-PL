@@ -16,17 +16,17 @@ import { PlayRing } from "@/components/hero-glow";
 
 const products = [
   {
-    name: "\u015Awierk O\u015Bnie\u017Cony",
+    name: "Świerk Ośnieżony",
     size: "180 cm",
     branches: "3 480",
     material: "100% PE",
     price: "569",
     oldPrice: "639",
-    badge: "\u221211%",
+    badge: "−11%",
     img: "/images/tree-snow.svg",
   },
   {
-    name: "\u015Awierk Kr\u00F3lewski",
+    name: "Świerk Królewski",
     size: "220 cm",
     branches: "5 920",
     material: "100% PE",
@@ -35,7 +35,7 @@ const products = [
     img: "/images/tree.svg",
   },
   {
-    name: "Jod\u0142a Karolina",
+    name: "Jodła Karolina",
     size: "180 cm",
     branches: "2 840",
     material: "100% PE",
@@ -46,34 +46,34 @@ const products = [
 ];
 
 const collections: [string, string, string, string][] = [
-  ["I", "Jak \u017Cywe", "127 modeli", "od 119 z\u0142"],
-  ["II", "\u015Anie\u017Cone", "12 modeli", "od 459 z\u0142"],
-  ["III", "Na pniu", "34 modele", "od 299 z\u0142"],
-  ["IV", "Wed\u0142ug wzrostu", "90\u2013250 cm", "znajd\u017A sw\u00F3j"],
+  ["I", "Jak żywe", "127 modeli", "od 119 zł"],
+  ["II", "Śnieżone", "12 modeli", "od 459 zł"],
+  ["III", "Na pniu", "34 modele", "od 299 zł"],
+  ["IV", "Według wzrostu", "90–250 cm", "znajdź swój"],
 ];
 
 const reviews = [
   {
-    text: "\u201ENajbardziej naturalna choinka, jak\u0105 mieli\u015Bmy. Go\u015Bcie pytaj\u0105, gdzie j\u0105 kupili\u015Bmy.\u201D",
+    text: "„Najbardziej naturalna choinka, jaką mieliśmy. Goście pytają, gdzie ją kupiliśmy.”",
     author: "Anna K.",
     city: "Warszawa",
   },
   {
-    text: "\u201EG\u0119sto\u015B\u0107 robi wra\u017Cenie. Roz\u0142o\u017Cyli\u015Bmy j\u0105 razem z dzie\u0107mi przed kolacj\u0105 wigilijn\u0105.\u201D",
+    text: "„Gęstość robi wrażenie. Rozłożyliśmy ją razem z dziećmi przed kolacją wigilijną.”",
     author: "Marek W.",
-    city: "Gda\u0144sk",
+    city: "Gdańsk",
   },
   {
-    text: "\u201EPi\u0119kna od pierwszej ga\u0142\u0105zki. I cena naprawd\u0119 uczciwa za t\u0119 jako\u015B\u0107.\u201D",
+    text: "„Piękna od pierwszej gałązki. I cena naprawdę uczciwa za tę jakość.”",
     author: "Karolina D.",
-    city: "Krak\u00F3w",
+    city: "Kraków",
   },
 ];
 
 const usps = [
-  { icon: Truck, title: "Wysy\u0142ka 24 h", desc: "InPost \u00B7 DPD" },
-  { icon: RotateCcw, title: "14 dni na zwrot", desc: "bez pyta\u0144" },
-  { icon: ShieldCheck, title: "Atest ppo\u017C.", desc: "bezpiecze\u0144stwo domu" },
+  { icon: Truck, title: "Wysyłka 24 h", desc: "InPost · DPD" },
+  { icon: RotateCcw, title: "14 dni na zwrot", desc: "bez pytań" },
+  { icon: ShieldCheck, title: "Atest ppoż.", desc: "bezpieczeństwo domu" },
   { icon: Factory, title: "Polska produkcja", desc: "od 1998 roku" },
 ];
 
@@ -126,9 +126,9 @@ function Plaque({
       <div className="plaque__divider" />
       <div className="plaque__bottom">
         <span className="plaque__specs">
-          {branches} ga\u0142\u0105zek \u00B7 {material}
+          {branches} gałązek · {material}
         </span>
-        <span className="plaque__price">{price} z\u0142</span>
+        <span className="plaque__price">{price} zł</span>
       </div>
     </div>
   );
@@ -149,19 +149,19 @@ export default function Home() {
           <a
             className="logo"
             href="#"
-            aria-label="Idealna Choinka \u2014 strona g\u0142\u00F3wna"
+            aria-label="Idealna Choinka — strona główna"
           >
             Idealna <em>Choinka</em>
           </a>
-          <nav className="header__nav" aria-label="G\u0142\u00F3wna nawigacja">
+          <nav className="header__nav" aria-label="Główna nawigacja">
             <a href="#kolekcje">Kolekcje</a>
-            <a href="#jakosc">Jako\u015B\u0107</a>
+            <a href="#jakosc">Jakość</a>
             <a href="#bestsellery">Bestsellery</a>
             <a href="#rozmiary">Rozmiary</a>
             <a href="#kontakt">Kontakt</a>
           </nav>
           <a className="btn btn--gold header__cta" href="#konfigurator">
-            <span>Wybierz choink\u0119</span> <GoldArrow />
+            <span>Wybierz choinkę</span> <GoldArrow />
           </a>
         </div>
       </header>
@@ -187,25 +187,25 @@ export default function Home() {
               Idealna <em>Choinka</em>
             </p>
             <h1 id="hero-heading" className="hero__h1">
-              Klejnot, kt\u00F3ry{" "}
-              <em>ubiera si\u0119</em>
+              Klejnot, który{" "}
+              <em>ubiera się</em>
               <br />
               raz w roku.
             </h1>
             <p className="hero__sub">
-              Najg\u0119stsze igliwie. Najuczciwsza cena. Choinka, kt\u00F3ra
-              ka\u017Cdego grudnia wygl\u0105da jak pierwszego dnia.
+              Najgęstsze igliwie. Najuczciwsza cena. Choinka, która
+              każdego grudnia wygląda jak pierwszego dnia.
             </p>
             <div className="hero__cta">
               <a className="btn btn--gold" href="#bestsellery">
-                <span>Poznaj \u015Awierk Kr\u00F3lewski</span> <GoldArrow />
+                <span>Poznaj Świerk Królewski</span> <GoldArrow />
               </a>
             </div>
           </Reveal>
         </div>
 
         <div className="hero__scroll-hint" aria-hidden="true">
-          <span>ZOBACZ, CO ROBI R\u00D3\u017BNIC\u0118</span>
+          <span>ZOBACZ, CO ROBI RÓŻNICĘ</span>
           <ChevronDown className="size-4" />
         </div>
       </section>
@@ -220,36 +220,36 @@ export default function Home() {
           <div className="configurator">
             <div className="configurator__inner">
               <div className="configurator__field">
-                <label htmlFor="cfg-h">Wysoko\u015B\u0107 sufitu</label>
+                <label htmlFor="cfg-h">Wysokość sufitu</label>
                 <select id="cfg-h" defaultValue="">
                   <option value="" disabled>
                     Wybierz
                   </option>
                   <option>do 220 cm</option>
-                  <option>220\u2013260 cm</option>
-                  <option>powy\u017Cej 260 cm</option>
+                  <option>220–260 cm</option>
+                  <option>powyżej 260 cm</option>
                 </select>
               </div>
               <div className="configurator__field">
                 <label htmlFor="cfg-c">Charakter</label>
                 <select id="cfg-c" defaultValue="">
                   <option value="" disabled>
-                    Jak ma wygl\u0105da\u0107?
+                    Jak ma wyglądać?
                   </option>
-                  <option>Jak \u017Cywa</option>
-                  <option>\u015Anie\u017Cona</option>
+                  <option>Jak żywa</option>
+                  <option>Śnieżona</option>
                   <option>Na pniu</option>
                 </select>
               </div>
               <div className="configurator__field">
-                <label htmlFor="cfg-b">Bud\u017Cet</label>
+                <label htmlFor="cfg-b">Budżet</label>
                 <select id="cfg-b" defaultValue="">
                   <option value="" disabled>
-                    Przedzia\u0142 cenowy
+                    Przedział cenowy
                   </option>
-                  <option>do 300 z\u0142</option>
-                  <option>300\u2013700 z\u0142</option>
-                  <option>powy\u017Cej 700 z\u0142</option>
+                  <option>do 300 zł</option>
+                  <option>300–700 zł</option>
+                  <option>powyżej 700 zł</option>
                 </select>
               </div>
               <div className="configurator__submit">
@@ -273,8 +273,8 @@ export default function Home() {
           <RevealStagger className="manifesto__grid">
             {[
               ["178", "modeli do wyboru"],
-              ["5 920", "ga\u0142\u0105zek w najg\u0119stszym modelu"],
-              ["24 h", "wysy\u0142ka z Polski"],
+              ["5 920", "gałązek w najgęstszym modelu"],
+              ["24 h", "wysyłka z Polski"],
             ].map(([num, label]) => (
               <RevealItem className="manifesto__stat" key={num}>
                 <strong>{num}</strong>
@@ -289,7 +289,7 @@ export default function Home() {
       <section className="collections" id="kolekcje">
         <div className="collections__inner">
           <Reveal>
-            <SectionTitle eyebrow="ZNAJD\u0179 SWOJ\u0104 FORM\u0118">
+            <SectionTitle eyebrow="ZNAJDŹ SWOJĄ FORMĘ">
               Cztery <span className="gold">gabloty</span>.
             </SectionTitle>
           </Reveal>
@@ -314,7 +314,7 @@ export default function Home() {
       </section>
 
       {/* ── VIDEO ── */}
-      <section className="video-section" aria-label="Film o monta\u017Cu">
+      <section className="video-section" aria-label="Film o montażu">
         <Image
           src="/images/interior.svg"
           alt=""
@@ -325,21 +325,21 @@ export default function Home() {
         <div className="video-section__overlay" />
         <Reveal className="video-section__content">
           <span className="sec-title__eyebrow">
-            BEZ NARZ\u0118DZI \u00B7 BEZ STRESU
+            BEZ NARZĘDZI · BEZ STRESU
           </span>
           <h2 className="video-section__title">
             Od kartonu do klejnotu
             <br />
-            \u2014 w pi\u0119\u0107 minut.
+            — w pięć minut.
           </h2>
           <button
             className="play-btn"
-            aria-label="Odtw\u00F3rz film o monta\u017Cu choinki"
+            aria-label="Odtwórz film o montażu choinki"
           >
             <PlayRing />
             <Play className="size-7" fill="currentColor" />
           </button>
-          <span className="video-section__label">Obejrzyj monta\u017C</span>
+          <span className="video-section__label">Obejrzyj montaż</span>
         </Reveal>
       </section>
 
@@ -349,22 +349,22 @@ export default function Home() {
           <Reveal className="quality__image">
             <Image
               src="/images/branch.svg"
-              alt="Makro ga\u0142\u0105zki choinki ze 100% PE"
+              alt="Makro gałązki choinki ze 100% PE"
               fill
               sizes="(max-width: 900px) 100vw, 50vw"
             />
           </Reveal>
           <Reveal className="quality__copy" delay={0.2}>
-            <SectionTitle eyebrow="CO ZOSTAJE Z TOB\u0104 NA LATA">
-              Prawdziwe pi\u0119kno zaczyna si\u0119{" "}
-              <span className="gold">od ga\u0142\u0105zki</span>.
+            <SectionTitle eyebrow="CO ZOSTAJE Z TOBĄ NA LATA">
+              Prawdziwe piękno zaczyna się{" "}
+              <span className="gold">od gałązki</span>.
             </SectionTitle>
             <dl className="specs-table">
               {[
                 ["Igliwie", "100% PE"],
-                ["G\u0119sto\u015B\u0107", "do 5 920 ga\u0142\u0105zek"],
-                ["Monta\u017C", "5 min \u00B7 zawiasy"],
-                ["Bezpiecze\u0144stwo", "atest ognioodporno\u015Bci"],
+                ["Gęstość", "do 5 920 gałązek"],
+                ["Montaż", "5 min · zawiasy"],
+                ["Bezpieczeństwo", "atest ognioodporności"],
                 ["Produkcja", "Polska"],
               ].map(([dt, dd]) => (
                 <div className="specs-table__row" key={dt}>
@@ -381,8 +381,8 @@ export default function Home() {
       <section className="bestsellers" id="bestsellery">
         <div className="bestsellers__inner">
           <Reveal>
-            <SectionTitle eyebrow="WYB\u00D3R NASZYCH KLIENT\u00D3W" center>
-              Najcz\u0119\u015Bciej <span className="gold">wybierane</span>.
+            <SectionTitle eyebrow="WYBÓR NASZYCH KLIENTÓW" center>
+              Najczęściej <span className="gold">wybierane</span>.
             </SectionTitle>
           </Reveal>
           <RevealStagger className="product-grid">
@@ -411,13 +411,13 @@ export default function Home() {
                   <div className="product-card__pricing">
                     {p.oldPrice && (
                       <div className="product-card__old">
-                        <del>{p.oldPrice} z\u0142</del>
+                        <del>{p.oldPrice} zł</del>
                         <small>
-                          Najni\u017Csza cena z 30 dni: {p.oldPrice} z\u0142
+                          Najniższa cena z 30 dni: {p.oldPrice} zł
                         </small>
                       </div>
                     )}
-                    <span className="product-card__price">{p.price} z\u0142</span>
+                    <span className="product-card__price">{p.price} zł</span>
                   </div>
                 </article>
               </RevealItem>
@@ -431,7 +431,7 @@ export default function Home() {
         <div className="lookbook__inner">
           <Reveal>
             <SectionTitle eyebrow="ZOBACZ GO U SIEBIE">
-              Grudzie\u0144 ma sw\u00F3j <span className="gold">blask</span>.
+              Grudzień ma swój <span className="gold">blask</span>.
             </SectionTitle>
           </Reveal>
           <RevealStagger className="lookbook__grid">
@@ -446,10 +446,10 @@ export default function Home() {
               </figure>
             </RevealItem>
             {[
-              "\u015Anie\u017Cona choinka w jadalni",
-              "Detal ozd\u00F3b na ga\u0142\u0105zce PE",
+              "Śnieżona choinka w jadalni",
+              "Detal ozdób na gałązce PE",
               "Choinka na pniu w holu",
-              "Wiecz\u00F3r przy o\u015Bwietlonej choince",
+              "Wieczór przy oświetlonej choince",
             ].map((alt, i) => (
               <RevealItem key={alt}>
                 <figure className="lookbook__thumb">
@@ -471,15 +471,15 @@ export default function Home() {
         <div className="testimonials__header">
           <div className="testimonials__header-inner">
             <Reveal>
-              <SectionTitle eyebrow="G\u0141OSY PRZY WITRYNIE" light>
-                Domy, kt\u00F3re wracaj\u0105{" "}
+              <SectionTitle eyebrow="GŁOSY PRZY WITRYNIE" light>
+                Domy, które wracają{" "}
                 <span className="gold">co roku</span>.
               </SectionTitle>
             </Reveal>
             <Reveal delay={0.2}>
               <div className="testimonials__counter">
                 <strong>2 400+</strong>
-                <span>zadowolonych klient\u00F3w</span>
+                <span>zadowolonych klientów</span>
               </div>
             </Reveal>
           </div>
@@ -506,7 +506,7 @@ export default function Home() {
                     <strong>{r.author}</strong>
                     <span>{r.city}</span>
                     <small>
-                      Zweryfikowana opinia \u00B7 TrustMate
+                      Zweryfikowana opinia · TrustMate
                     </small>
                   </footer>
                 </blockquote>
@@ -517,7 +517,7 @@ export default function Home() {
       </section>
 
       {/* ── USP BAR ── */}
-      <section className="usp" aria-label="Korzy\u015Bci zakupowe">
+      <section className="usp" aria-label="Korzyści zakupowe">
         {usps.map(({ icon: Icon, title, desc }) => (
           <div className="usp__item" key={title}>
             <Icon className="size-6 usp__icon" strokeWidth={1.5} />
@@ -545,8 +545,8 @@ export default function Home() {
               Pierwsi przy <span className="gold">witrynie</span>.
             </SectionTitle>
             <p>
-              Nowe kolekcje, powroty bestseller\u00F3w i grudniowe inspiracje
-              \u2014 zanim znikn\u0105.
+              Nowe kolekcje, powroty bestsellerów i grudniowe inspiracje
+              — zanim znikną.
             </p>
           </Reveal>
           <Reveal className="newsletter__form-wrap" delay={0.2}>
@@ -557,11 +557,11 @@ export default function Home() {
               <input
                 id="nl-email"
                 type="email"
-                placeholder="Tw\u00F3j adres e-mail"
+                placeholder="Twój adres e-mail"
                 required
               />
               <button className="btn btn--gold" type="submit">
-                <span>Do\u0142\u0105cz</span> <GoldArrow />
+                <span>Dołącz</span> <GoldArrow />
               </button>
             </form>
           </Reveal>
@@ -575,7 +575,7 @@ export default function Home() {
             <a className="logo" href="#">
               Idealna <em>Choinka</em>
             </a>
-            <p>Choinki stworzone, by zostawa\u0107 w rodzinie na lata.</p>
+            <p>Choinki stworzone, by zostawać w rodzinie na lata.</p>
             <div className="footer__social">
               <a href="#" aria-label="Facebook">
                 Fb
@@ -590,20 +590,20 @@ export default function Home() {
           </div>
           <div className="footer__col">
             <h3>Choinki</h3>
-            <a href="#kolekcje">Jak \u017Cywe</a>
-            <a href="#kolekcje">\u015Anie\u017Cone</a>
+            <a href="#kolekcje">Jak żywe</a>
+            <a href="#kolekcje">Śnieżone</a>
             <a href="#kolekcje">Na pniu</a>
-            <a href="#kolekcje">Wed\u0142ug wzrostu</a>
+            <a href="#kolekcje">Według wzrostu</a>
           </div>
           <div className="footer__col">
             <h3>Pomoc</h3>
-            <a href="#jakosc">Jako\u015B\u0107 i atesty</a>
+            <a href="#jakosc">Jakość i atesty</a>
             <a href="#kontakt">Dostawa i zwroty</a>
             <a href="#kontakt">Kontakt</a>
             <a href="#">Regulamin</a>
           </div>
           <div className="footer__col">
-            <h3>Bezpieczne p\u0142atno\u015Bci</h3>
+            <h3>Bezpieczne płatności</h3>
             <div className="footer__payments">
               <span>BLIK</span>
               <span>Przelewy24</span>
@@ -613,7 +613,7 @@ export default function Home() {
         </div>
         <div className="footer__bottom">
           <small>
-            \u00A9 2026 Idealna Choinka \u00B7 Wszystkie prawa zastrze\u017Cone
+            © 2026 Idealna Choinka · Wszystkie prawa zastrzeżone
           </small>
         </div>
       </footer>
