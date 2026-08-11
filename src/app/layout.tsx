@@ -21,8 +21,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pl">
-      <body className={playfair.variable}>
+    <html lang="pl" className={`${playfair.variable} ${playfair.className}`}>
+      <body>
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

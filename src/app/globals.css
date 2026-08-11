@@ -85,7 +85,7 @@ body {
   margin: 0;
   color: var(--ivory);
   background: var(--forest);
-  font-family: var(--font-ui);
+  font-family: var(--font-playfair), "Times New Roman", Georgia, serif;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -1536,9 +1536,10 @@ img {
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-playfair), "Times New Roman", Georgia, serif;
   }
   html {
-    @apply font-sans;
+    font-family: var(--font-playfair), "Times New Roman", Georgia, serif;
   }
 }
 
