@@ -1,9 +1,4 @@
 import type { Metadata } from "next";
-import "@fontsource/playfair-display/latin-ext-400.css";
-import "@fontsource/playfair-display/latin-ext-400-italic.css";
-import "@fontsource/playfair-display/latin-ext-500.css";
-import "@fontsource/playfair-display/latin-ext-600.css";
-import "@fontsource/playfair-display/latin-ext-700.css";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import "./globals.css";
 

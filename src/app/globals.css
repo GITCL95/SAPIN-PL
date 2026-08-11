@@ -1,3 +1,8 @@
+@import "@fontsource/playfair-display/latin-ext-400.css";
+@import "@fontsource/playfair-display/latin-ext-400-italic.css";
+@import "@fontsource/playfair-display/latin-ext-500.css";
+@import "@fontsource/playfair-display/latin-ext-600.css";
+@import "@fontsource/playfair-display/latin-ext-700.css";
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -80,13 +85,13 @@
 html {
   scroll-behavior: smooth;
   background: var(--forest);
-  font-family: "Playfair Display", "Times New Roman", Georgia, serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 body {
   margin: 0;
   color: var(--ivory);
   background: var(--forest);
-  font-family: inherit;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -274,11 +279,10 @@ img {
    ═══════════════════════════════════════════════════ */
 .hero {
   position: relative;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: calc(100vh - 80px);
+  min-height: calc(100dvh - 80px);
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-end;
   overflow: hidden;
 }
 .hero__bg {
@@ -312,9 +316,6 @@ img {
 .hero__content {
   position: relative;
   z-index: 2;
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
   max-width: 1400px;
   margin: 0 auto;
   padding: 48px 48px 140px;
@@ -1535,6 +1536,14 @@ img {
 @layer base {
   * {
     @apply border-border outline-ring/50;
+  }
+  html,
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   }
   body {
     @apply bg-background text-foreground;
