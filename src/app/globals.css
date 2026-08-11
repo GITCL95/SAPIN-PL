@@ -330,6 +330,7 @@ img {
 }
 .hero__text {
   max-width: 600px;
+  color: #fff;
 }
 .hero__brand {
   margin: 0 0 28px;
@@ -343,7 +344,7 @@ img {
 .hero__brand em {
   font-weight: 400;
   font-style: italic;
-  color: var(--brass-light);
+  color: #fff;
 }
 .hero__h1 {
   font-family: var(--font-display);
@@ -357,7 +358,7 @@ img {
 .hero__h1 em {
   font-weight: 400;
   font-style: italic;
-  color: var(--brass-light);
+  color: #fff;
 }
 .hero__sub {
   max-width: 480px;
@@ -367,7 +368,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0;
-  color: rgba(244, 238, 223, 0.9);
+  color: #fff;
 }
 .hero__cta {
   display: flex;
