@@ -1,22 +1,14 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond } from "next/font/google";
 import localFont from "next/font/local";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import "./globals.css";
 
-const fraunces = localFont({
-  src: [
-    {
-      path: "../../node_modules/@fontsource-variable/fraunces/files/fraunces-latin-ext-full-normal.woff2",
-      weight: "300 900",
-      style: "normal",
-    },
-    {
-      path: "../../node_modules/@fontsource-variable/fraunces/files/fraunces-latin-ext-full-italic.woff2",
-      weight: "300 900",
-      style: "italic",
-    },
-  ],
-  variable: "--font-fraunces",
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin", "latin-ext"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
@@ -38,7 +30,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pl">
-      <body className={`${fraunces.variable} ${archivo.variable}`}>
+      <body className={`${cormorant.variable} ${archivo.variable}`}>
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
