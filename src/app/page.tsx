@@ -177,7 +177,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-heading">
         <div className="hero__bg">
           <Image
-            src="/images/hero-banner.png"
+            src="/images/hero-banner.jpg"
             alt=""
             fill
             priority
