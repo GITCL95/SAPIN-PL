@@ -23,8 +23,9 @@
   --color-brass-dark: oklch(0.50 0.07 68);
   --color-ivory: oklch(0.94 0.02 95);
   --color-mist: oklch(0.73 0.03 151);
-  --font-sans: "Playfair Display", "Times New Roman", Georgia, serif;
-  --font-heading: "Playfair Display", "Times New Roman", Georgia, serif;
+  --font-sans: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --default-font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 :root {
@@ -37,8 +38,8 @@
   --ivory: #F4EEDF;
   --mist: #9FB2A4;
 
-  --font-display: "Playfair Display", "Times New Roman", Georgia, serif;
-  --font-ui: "Playfair Display", "Times New Roman", Georgia, serif;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-ui: "Playfair Display", Georgia, "Times New Roman", serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
@@ -147,6 +148,7 @@ img {
   border-bottom: 1px solid rgba(231, 201, 141, 0.28);
   box-shadow: 0 12px 40px rgba(80, 8, 28, 0.35);
   backdrop-filter: blur(10px);
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 .header__inner {
   display: flex;
@@ -175,6 +177,7 @@ img {
   gap: clamp(18px, 2.5vw, 36px);
 }
 .header__nav a {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -1457,8 +1460,9 @@ img {
 }
 
 @theme inline {
-  --font-heading: "Playfair Display", "Times New Roman", Georgia, serif;
-  --font-sans: "Playfair Display", "Times New Roman", Georgia, serif;
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Playfair Display", Georgia, "Times New Roman", serif;
+  --default-font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -1539,11 +1543,21 @@ img {
   }
   html,
   body,
+  .header,
+  .header__nav a,
+  .logo,
+  .btn,
   button,
   input,
   select,
-  textarea {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  textarea,
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  nav {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
   }
   body {
     @apply bg-background text-foreground;
