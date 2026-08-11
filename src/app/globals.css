@@ -18,6 +18,8 @@
   --color-brass-dark: oklch(0.50 0.07 68);
   --color-ivory: oklch(0.94 0.02 95);
   --color-mist: oklch(0.73 0.03 151);
+  --font-sans: var(--font-playfair), "Times New Roman", Georgia, serif;
+  --font-heading: var(--font-playfair), "Times New Roman", Georgia, serif;
 }
 
 :root {
@@ -31,7 +33,7 @@
   --mist: #9FB2A4;
 
   --font-display: var(--font-playfair), "Times New Roman", Georgia, serif;
-  --font-ui: var(--font-archivo), "Arial", sans-serif;
+  --font-ui: var(--font-playfair), "Times New Roman", Georgia, serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
@@ -1452,8 +1454,8 @@ img {
 }
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: var(--font-sans);
+  --font-heading: var(--font-playfair), "Times New Roman", Georgia, serif;
+  --font-sans: var(--font-playfair), "Times New Roman", Georgia, serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);

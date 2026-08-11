@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
-import localFont from "next/font/local";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import "./globals.css";
 
@@ -9,13 +8,6 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   variable: "--font-playfair",
-  display: "swap",
-});
-
-const archivo = localFont({
-  src: "../../node_modules/@fontsource-variable/archivo/files/archivo-latin-ext-wght-normal.woff2",
-  weight: "100 900",
-  variable: "--font-archivo",
   display: "swap",
 });
 
@@ -30,7 +22,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pl">
-      <body className={`${playfair.variable} ${archivo.variable}`}>
+      <body className={playfair.variable}>
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
