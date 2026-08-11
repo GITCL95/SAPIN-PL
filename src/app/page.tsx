@@ -10,7 +10,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { Reveal, RevealStagger, RevealItem } from "@/components/reveal";
-import { HeroGlow, PlayRing } from "@/components/hero-glow";
+import { PlayRing } from "@/components/hero-glow";
 
 /* ═══ DATA ═══ */
 
@@ -176,17 +176,22 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="hero" aria-labelledby="hero-heading">
         <div className="hero__bg">
-          <Image src="/images/interior.svg" alt="" fill priority sizes="100vw" />
+          <Image
+            src="/images/hero-banner.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="hero__bg-img"
+          />
           <div className="hero__overlay" />
         </div>
 
         <div className="hero__content">
           <Reveal className="hero__text">
-            <div className="hero__stars" aria-label="5 gwiazdek jako\u015Bci">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="size-4" fill="currentColor" />
-              ))}
-            </div>
+            <p className="hero__brand">
+              Idealna <em>Choinka</em>
+            </p>
             <h1 id="hero-heading" className="hero__h1">
               Klejnot, kt\u00F3ry{" "}
               <em>ubiera si\u0119</em>
@@ -197,30 +202,11 @@ export default function Home() {
               Najg\u0119stsze igliwie. Najuczciwsza cena. Choinka, kt\u00F3ra
               ka\u017Cdego grudnia wygl\u0105da jak pierwszego dnia.
             </p>
-            <a className="btn btn--gold" href="#bestsellery">
-              <span>Poznaj \u015Awierk Kr\u00F3lewski</span> <GoldArrow />
-            </a>
-          </Reveal>
-
-          <Reveal className="hero__showcase" delay={0.3} y={60}>
-            <div className="showcase-arch">
-              <HeroGlow />
-              <Image
-                src="/images/tree.svg"
-                alt="\u015Awierk Kr\u00F3lewski 220 cm \u2014 choinka sztuczna premium"
-                width={300}
-                height={400}
-                priority
-                className="showcase-arch__img"
-              />
+            <div className="hero__cta">
+              <a className="btn btn--gold" href="#bestsellery">
+                <span>Poznaj \u015Awierk Kr\u00F3lewski</span> <GoldArrow />
+              </a>
             </div>
-            <Plaque
-              name="\u015Awierk Kr\u00F3lewski"
-              size="220 cm"
-              branches="5 920"
-              material="100% PE"
-              price="1 099"
-            />
           </Reveal>
         </div>
 
