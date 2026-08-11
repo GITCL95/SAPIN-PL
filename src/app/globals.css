@@ -136,8 +136,9 @@ img {
 
 /* ─── Header ─── */
 .header {
-  position: relative;
-  z-index: 50;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background:
     linear-gradient(
       180deg,
@@ -195,6 +196,7 @@ img {
   align-items: center;
   gap: 12px;
   padding: 14px 28px;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -282,8 +284,10 @@ img {
    ═══════════════════════════════════════════════════ */
 .hero {
   position: relative;
-  min-height: calc(100vh - 80px);
-  min-height: calc(100dvh - 80px);
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin-top: -80px;
+  padding-top: 80px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -1547,6 +1551,11 @@ img {
   .header__nav a,
   .logo,
   .btn,
+  .btn span,
+  .configurator,
+  .configurator__field label,
+  .configurator__field select,
+  .configurator__field select option,
   button,
   input,
   select,
@@ -1556,7 +1565,8 @@ img {
   h3,
   p,
   a,
-  nav {
+  nav,
+  span {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
   }
   body {
