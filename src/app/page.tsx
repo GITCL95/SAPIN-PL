@@ -143,31 +143,30 @@ function GoldArrow() {
 export default function Home() {
   return (
     <>
-      {/* ── HEADER ── */}
-      <header className="header">
-        <div className="header__inner">
-          <a
-            className="logo"
-            href="#"
-            aria-label="Idealna Choinka — strona główna"
-          >
-            Idealna <em>Choinka</em>
-          </a>
-          <nav className="header__nav" aria-label="Główna nawigacja">
-            <a href="#kolekcje">Kolekcje</a>
-            <a href="#jakosc">Jakość</a>
-            <a href="#bestsellery">Bestsellery</a>
-            <a href="#rozmiary">Rozmiary</a>
-            <a href="#kontakt">Kontakt</a>
-          </nav>
-          <a className="btn btn--gold header__cta" href="#konfigurator">
-            <span>Wybierz choinkę</span> <GoldArrow />
-          </a>
-        </div>
-      </header>
-
       {/* ── HERO ── */}
       <section className="hero" aria-labelledby="hero-heading">
+        <header className="header">
+          <div className="header__inner">
+            <a
+              className="logo"
+              href="#"
+              aria-label="Idealna Choinka — strona główna"
+            >
+              Idealna <em>Choinka</em>
+            </a>
+            <nav className="header__nav" aria-label="Główna nawigacja">
+              <a href="#kolekcje">Kolekcje</a>
+              <a href="#jakosc">Jakość</a>
+              <a href="#bestsellery">Bestsellery</a>
+              <a href="#rozmiary">Rozmiary</a>
+              <a href="#kontakt">Kontakt</a>
+            </nav>
+            <a className="btn btn--gold header__cta" href="#konfigurator">
+              <span>Wybierz choinkę</span> <GoldArrow />
+            </a>
+          </div>
+        </header>
+
         <div className="hero__bg">
           <Image
             src="/images/hero-banner.jpg"

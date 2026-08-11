@@ -130,10 +130,7 @@ img {
 
 /* ─── Header ─── */
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   z-index: 50;
   background:
     linear-gradient(
@@ -280,7 +277,8 @@ img {
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   overflow: hidden;
 }
 .hero__bg {
@@ -314,9 +312,12 @@ img {
 .hero__content {
   position: relative;
   z-index: 2;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 160px 48px 140px;
+  padding: 48px 48px 140px;
   width: 100%;
 }
 .hero__text {
