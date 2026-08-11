@@ -296,7 +296,8 @@ img {
 .hero__bg-img {
   object-fit: cover;
   object-position: center 40%;
-  animation: hero-ken 18s ease-out forwards;
+  animation: hero-ken 22s ease-out forwards;
+  will-change: transform;
 }
 .hero__overlay {
   position: absolute;
@@ -1273,7 +1274,7 @@ img {
 }
 @keyframes hero-ken {
   0% {
-    transform: scale(1.08);
+    transform: scale(1.04);
   }
   100% {
     transform: scale(1);
