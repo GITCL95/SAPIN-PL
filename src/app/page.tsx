@@ -143,13 +143,6 @@ function GoldArrow() {
 export default function Home() {
   return (
     <>
-      {/* ── ANNONCE ── */}
-      <div className="announcement" role="marquee">
-        <Star className="size-3 inline-block opacity-50" aria-hidden="true" />{" "}
-        Zam\u00F3w do 18 grudnia \u2014 pod choink\u0105 przed Wigili\u0105{" "}
-        <Star className="size-3 inline-block opacity-50" aria-hidden="true" />
-      </div>
-
       {/* ── HEADER ── */}
       <header className="header">
         <div className="header__inner">

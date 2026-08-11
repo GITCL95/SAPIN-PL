@@ -125,29 +125,10 @@ img {
    COMPONENTS
    ═══════════════════════════════════════════════════ */
 
-/* ─── Announcement bar ─── */
-.announcement {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding: 10px 24px;
-  background: linear-gradient(90deg, #A07D44, var(--brass), #A07D44);
-  color: var(--forest);
-  text-align: center;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-.announcement span {
-  color: var(--forest);
-  opacity: 0.5;
-}
-
 /* ─── Header ─── */
 .header {
   position: absolute;
-  top: 36px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 50;
@@ -1339,10 +1320,6 @@ img {
 }
 
 @media (max-width: 640px) {
-  .announcement {
-    font-size: 9px;
-    padding: 8px 16px;
-  }
   .header__inner {
     padding: 0 20px;
     min-height: 64px;
