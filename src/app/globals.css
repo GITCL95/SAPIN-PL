@@ -325,7 +325,7 @@ img {
   z-index: 2;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 48px 48px 140px;
+  padding: 48px 48px 180px;
   width: 100%;
 }
 .hero__text {
@@ -502,10 +502,13 @@ img {
    margin-top négatif, panneau sombre, bordure or
    ═══════════════════════════════════════════════════ */
 .configurator-section {
-  position: relative;
+  position: absolute;
+  bottom: 36px;
+  left: 0;
+  right: 0;
   z-index: 10;
   max-width: 1100px;
-  margin: -75px auto 0;
+  margin: 0 auto;
   padding: 0 24px;
 }
 .configurator {
@@ -576,7 +579,7 @@ img {
    MANIFESTO
    ═══════════════════════════════════════════════════ */
 .manifesto {
-  padding: 140px 24px 120px;
+  padding: 100px 24px 120px;
 }
 .manifesto__inner {
   max-width: 1000px;
@@ -1306,8 +1309,11 @@ img {
   .header__nav {
     display: none;
   }
+  .hero {
+    overflow: visible;
+  }
   .hero__content {
-    padding: 140px 32px 120px;
+    padding: 140px 32px 200px;
   }
   .hero__bg-img {
     object-position: 65% center;
@@ -1373,7 +1379,7 @@ img {
     object-position: 70% center;
   }
   .configurator-section {
-    margin-top: -60px;
+    bottom: 24px;
     padding: 0 16px;
   }
   .manifesto {
@@ -1577,7 +1583,7 @@ img {
 /* ── Hero scroll hint ── */
 .hero__scroll-hint {
   position: absolute;
-  bottom: 32px;
+  bottom: 140px;
   left: 48px;
   z-index: 3;
   display: flex;

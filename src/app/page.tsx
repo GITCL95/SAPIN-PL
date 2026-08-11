@@ -207,58 +207,57 @@ export default function Home() {
           <span>ZOBACZ, CO ROBI RÓŻNICĘ</span>
           <ChevronDown className="size-4" />
         </div>
-      </section>
 
-      {/* ── CONFIGURATEUR ── */}
-      <section
-        className="configurator-section"
-        id="konfigurator"
-        aria-label="Konfigurator choinki"
-      >
-        <Reveal y={30}>
-          <div className="configurator">
-            <div className="configurator__inner">
-              <div className="configurator__field">
-                <label htmlFor="cfg-h">Wysokość sufitu</label>
-                <select id="cfg-h" defaultValue="">
-                  <option value="" disabled>
-                    Wybierz
-                  </option>
-                  <option>do 220 cm</option>
-                  <option>220–260 cm</option>
-                  <option>powyżej 260 cm</option>
-                </select>
-              </div>
-              <div className="configurator__field">
-                <label htmlFor="cfg-c">Charakter</label>
-                <select id="cfg-c" defaultValue="">
-                  <option value="" disabled>
-                    Jak ma wyglądać?
-                  </option>
-                  <option>Jak żywa</option>
-                  <option>Śnieżona</option>
-                  <option>Na pniu</option>
-                </select>
-              </div>
-              <div className="configurator__field">
-                <label htmlFor="cfg-b">Budżet</label>
-                <select id="cfg-b" defaultValue="">
-                  <option value="" disabled>
-                    Przedział cenowy
-                  </option>
-                  <option>do 300 zł</option>
-                  <option>300–700 zł</option>
-                  <option>powyżej 700 zł</option>
-                </select>
-              </div>
-              <div className="configurator__submit">
-                <a className="btn btn--gold btn--full" href="#bestsellery">
-                  <span>Dobierz</span> <GoldArrow />
-                </a>
+        <section
+          className="configurator-section"
+          id="konfigurator"
+          aria-label="Konfigurator choinki"
+        >
+          <Reveal y={30}>
+            <div className="configurator">
+              <div className="configurator__inner">
+                <div className="configurator__field">
+                  <label htmlFor="cfg-h">Wysokość sufitu</label>
+                  <select id="cfg-h" defaultValue="">
+                    <option value="" disabled>
+                      Wybierz
+                    </option>
+                    <option>do 220 cm</option>
+                    <option>220–260 cm</option>
+                    <option>powyżej 260 cm</option>
+                  </select>
+                </div>
+                <div className="configurator__field">
+                  <label htmlFor="cfg-c">Charakter</label>
+                  <select id="cfg-c" defaultValue="">
+                    <option value="" disabled>
+                      Jak ma wyglądać?
+                    </option>
+                    <option>Jak żywa</option>
+                    <option>Śnieżona</option>
+                    <option>Na pniu</option>
+                  </select>
+                </div>
+                <div className="configurator__field">
+                  <label htmlFor="cfg-b">Budżet</label>
+                  <select id="cfg-b" defaultValue="">
+                    <option value="" disabled>
+                      Przedział cenowy
+                    </option>
+                    <option>do 300 zł</option>
+                    <option>300–700 zł</option>
+                    <option>powyżej 700 zł</option>
+                  </select>
+                </div>
+                <div className="configurator__submit">
+                  <a className="btn btn--gold btn--full" href="#bestsellery">
+                    <span>Dobierz</span> <GoldArrow />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
+        </section>
       </section>
 
       {/* ── MANIFESTO ── */}
